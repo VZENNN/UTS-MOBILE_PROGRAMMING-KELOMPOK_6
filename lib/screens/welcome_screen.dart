@@ -1,3 +1,5 @@
+import 'package:uts_kelompok_6_healthapp/screens/login_screen.dart';
+import 'package:uts_kelompok_6_healthapp/screens/signup_screen.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -48,7 +50,7 @@ class WelcomeScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                   child: InkWell(
                     onTap: () {
-                      // Navigator.push(context,MaterialPageRoute(builder: (context) => LoginScreen()));
+                      Navigator.push(context,MaterialPageRoute(builder: (context) => LoginScreen()));
                     },
                     child: Padding(
                       padding: EdgeInsets.symmetric(vertical: 15, horizontal: 40),
@@ -68,7 +70,7 @@ class WelcomeScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                   child: InkWell(
                     onTap: () {
-                      // Navigator.push(context,MaterialPageRoute(builder: (context) => SignupScreen()));
+                    Navigator.push(context,MaterialPageRoute(builder: (context) => SignUpScreen()));
                     },
                     child: Padding(
                       padding: EdgeInsets.symmetric(vertical: 15, horizontal: 40),
