@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:uts_kelompok_6_healthapp/screens/schedule_screen.dart';
 
 class UpcomingSchedule extends StatelessWidget{
   const UpcomingSchedule({super.key});
