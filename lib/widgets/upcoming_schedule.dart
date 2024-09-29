@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uts_kelompok_6_healthapp/screens/schedule_screen.dart';
 
 class UpcomingSchedule extends StatelessWidget{
   const UpcomingSchedule({super.key});
@@ -188,7 +189,7 @@ class UpcomingSchedule extends StatelessWidget{
                 children: [
                   ListTile(
                     title: Text (
-                      "Dr.Janshen",
+                      "Dr.Viezen",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                       ),
@@ -196,7 +197,7 @@ class UpcomingSchedule extends StatelessWidget{
                       subtitle: Text("Therapist"),
                       trailing: CircleAvatar(
                         radius: 25,
-                        backgroundImage: AssetImage("images/doctor1.jpg"),
+                        backgroundImage: AssetImage("images/doctor2.jpg"),
                       ),
                   ),
                   Padding(
