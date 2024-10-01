@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:uts_kelompok_6_healthapp/screens/home_screen.dart';
 import 'package:uts_kelompok_6_healthapp/screens/signup_screen.dart';
 
 class LoginScreen extends StatefulWidget{
@@ -67,11 +68,11 @@ class _LoginScreenState extends State<LoginScreen>{
                       borderRadius: BorderRadius.circular(10),
                       child: InkWell(
                         onTap: (){
-                          // Navigator.push(
-                          //   context, 
-                          //   MaterialPageRoute(
-                          //     builder: (context) =>LoginScreen(),
-                          //   ));
+                          Navigator.push(
+                            context, 
+                            MaterialPageRoute(
+                              builder: (context) =>HomeScreen(),
+                            ));
                         },
                         child: Padding(
                           padding: 
@@ -88,7 +89,7 @@ class _LoginScreenState extends State<LoginScreen>{
                           ),
                         ),
                       ),
-                    ),
+                  ),
                 ),
               ),
               SizedBox(height: 20),

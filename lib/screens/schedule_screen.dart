@@ -57,7 +57,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                       });
                     },
                     child: Container(
-                      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 25),
+                      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 18),
                       decoration: BoxDecoration(
                         color: _buttonIndex == 0 ? Colors.blueAccent : Colors.white10,
                         borderRadius: BorderRadius.circular(10),
@@ -79,7 +79,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                       });
                     },
                     child: Container(
-                      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 25),
+                      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 18),
                       decoration: BoxDecoration(
                         color: _buttonIndex == 1 ? Colors.blueAccent : Colors.white10,
                         borderRadius: BorderRadius.circular(10),
@@ -101,7 +101,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                       });
                     },
                     child: Container(
-                      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 25),
+                      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 18),
                       decoration: BoxDecoration(
                         color: _buttonIndex == 2 ? Colors.blueAccent : Colors.white10,
                         borderRadius: BorderRadius.circular(10),

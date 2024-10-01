@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uts_kelompok_6_healthapp/screens/appointment_screen.dart';
 
 class HomeScreen extends StatelessWidget{
   List symptoms = [
@@ -23,7 +24,7 @@ class HomeScreen extends StatelessWidget{
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
+          Padding (
             padding: EdgeInsets.symmetric(horizontal: 15),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -166,32 +167,119 @@ class HomeScreen extends StatelessWidget{
             scrollDirection: Axis.horizontal,
             itemCount: symptoms.length,
             itemBuilder: (context, index) {
-            return Container(
-              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
-              padding: EdgeInsets.symmetric(horizontal: 25),
-              decoration: BoxDecoration(
-                color: Color(0xFFF4F6FA),
-                borderRadius: BorderRadius.circular(10),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black12,
-                    blurRadius: 4,
-                    spreadRadius: 2,
-                  )
-                ],
-              ),
-              child: Center(
-                child: Text(
-                  symptoms[index],
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black54,
+              return Container(
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+                padding: EdgeInsets.symmetric(horizontal: 25),
+                decoration: BoxDecoration(
+                  color: Color(0xFFF4F6FA),
+                  borderRadius: BorderRadius.circular(10),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black12,
+                      blurRadius: 4,
+                      spreadRadius: 2,
+                    )
+                  ],
+                ),
+                child: Center(
+                  child: Text(
+                    symptoms[index],
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.black54,
+                    ),
                   ),
+                ),
+              );
+            },
+          ),
+        ),
+
+        SizedBox(height: 15),
+        Padding(
+          padding: EdgeInsets.only(left: 15),
+          child: Text(
+            "Popular Doctors",
+            style: TextStyle(
+              fontSize: 23,
+              fontWeight: FontWeight.w500,
+              color: Colors.black54,
+            ),
+          ),
+        ),
+        GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+          ),
+          itemCount: 4,
+          shrinkWrap: true,
+          physics: NeverScrollableScrollPhysics(), 
+          itemBuilder: (context, index) {
+            return InkWell(
+              onTap: () {
+                Navigator.push(
+                  context, 
+                  MaterialPageRoute(
+                    builder: (context) => AppointmentScreen(),
+                    ));
+              },
+              child: Container(
+                margin: EdgeInsets.all(10),
+                padding: EdgeInsets.symmetric(vertical: 15),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(10),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black12,
+                      blurRadius: 4,
+                      spreadRadius: 2,
+                    ),
+                  ],
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    CircleAvatar(
+                      radius: 35,
+                      backgroundImage: AssetImage("images/${imgs[index]}"),
+                    ),
+                    Text(
+                      "Dr. Doctor Name",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.black54
+                      ),
+                    ),
+                    Text(
+                      "Therapist",
+                      style: TextStyle(
+                        color: Colors.black45,
+                      ),
+                    ),
+                    Row(
+                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.star,
+                          color: Colors.amber,
+                        ),
+                        Text(
+                          "4.9",
+                          style: TextStyle(
+                            color: Colors.black45,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
               ),
             );
-            },),
+          }
           ),
         ],
       ),

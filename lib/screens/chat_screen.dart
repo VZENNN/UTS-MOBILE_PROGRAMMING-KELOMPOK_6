@@ -12,7 +12,7 @@ class ChatScreen extends StatelessWidget {
         preferredSize: Size.fromHeight(70),
         child: AppBar(
           backgroundColor: Color(0xFF7165D6),
-          leadingWidth: 30,
+          leadingWidth: 12.3,
           title: Padding(
             padding: const EdgeInsets.only(top: 8),
             child: Row(children: [
@@ -91,7 +91,7 @@ class ChatScreen extends StatelessWidget {
               padding: EdgeInsets.only(left: 10),
               child: Container(
                 alignment: Alignment.centerRight,
-                width:270,
+                width:265,
                 child: TextFormField(
                   decoration: InputDecoration(
                       hintText: "type something", 
