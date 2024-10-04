@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:uts_kelompok_6_healthapp/screens/home_screen.dart';
 import 'package:uts_kelompok_6_healthapp/screens/schedule_screen.dart';
 import 'package:uts_kelompok_6_healthapp/screens/message_screen.dart';
+import 'package:uts_kelompok_6_healthapp/screens/settings_screen.dart';
 
 class NavbarRoots extends StatefulWidget{
   @override
@@ -20,7 +21,7 @@ class _NavbarRootsState extends State<NavbarRoots> {
     // Schedule Screen
     ScheduleScreen(),
     // Settings Screen
-    Container(),
+    SettingsScreen(),
   ];
 
   @override

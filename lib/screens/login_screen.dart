@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:uts_kelompok_6_healthapp/screens/home_screen.dart';
 import 'package:uts_kelompok_6_healthapp/screens/signup_screen.dart';
+import 'package:uts_kelompok_6_healthapp/widgets/navbar_roots.dart';
 
 class LoginScreen extends StatefulWidget{
   @override
@@ -71,7 +72,7 @@ class _LoginScreenState extends State<LoginScreen>{
                           Navigator.push(
                             context, 
                             MaterialPageRoute(
-                              builder: (context) =>HomeScreen(),
+                              builder: (context) =>NavbarRoots(),
                             ));
                         },
                         child: Padding(

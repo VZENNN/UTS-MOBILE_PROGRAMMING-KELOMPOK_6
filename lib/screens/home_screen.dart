@@ -246,7 +246,7 @@ class HomeScreen extends StatelessWidget{
                       backgroundImage: AssetImage("images/${imgs[index]}"),
                     ),
                     Text(
-                      "Dr. Doctor Name",
+                      "Dr. Valentina Devin",
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w500,
