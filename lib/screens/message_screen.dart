@@ -173,7 +173,7 @@ class MessageScreen extends StatelessWidget {
                       ),
                     ),
                     title: Text(
-                      "Dr. Doctor Name",
+                      "Doctor",
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,

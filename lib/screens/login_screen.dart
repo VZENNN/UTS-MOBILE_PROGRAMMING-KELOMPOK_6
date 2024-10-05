@@ -41,7 +41,7 @@ class _LoginScreenState extends State<LoginScreen>{
                   obscureText: passToggle ? true : false,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
-                    label: Text("Enter Username"),
+                    label: Text("Enter Password"),
                     prefixIcon: Icon(Icons.lock),
                     suffixIcon: InkWell(
                       onTap: () {

@@ -51,7 +51,7 @@ class AppointmentScreen extends StatelessWidget {
                       children: [
                         CircleAvatar(
                           radius: 35,
-                          backgroundImage: AssetImage("image/doctor1.jpg"),
+                          backgroundImage: AssetImage("images/doctor1.jpg"),
                         ),
                         SizedBox(height: 15),
                         Text(
@@ -320,7 +320,7 @@ class AppointmentScreen extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 15),
+            SizedBox(height: 9),
             InkWell(
               onTap: () {},
               child: Container(
